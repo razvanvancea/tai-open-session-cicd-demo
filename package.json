@@ -1,0 +1,22 @@
+{
+  "name": "demo-tai-open-session-pw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:headless": "npx playwright test",
+    "test:headed": "npx playwright test --headed --workers=1",
+    "test:smoke": "npx playwright test -g @smoke",
+    "codegen:saucedemo": "npx playwright codegen https://saucedemo.com",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
+    "prettier": "^3.7.4"
+  }
+}
